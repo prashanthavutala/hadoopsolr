@@ -21,7 +21,7 @@ ENV BITNAMI_APP_NAME="solr" \
 EXPOSE 8983
 
 USER 1001
-CMD [ "/run.sh" ]
+#CMD [ "/run.sh" ]
 
 
 # Install hadoop detailsFROM debian:jessie-backports
