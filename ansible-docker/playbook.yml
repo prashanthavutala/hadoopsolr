@@ -3,8 +3,8 @@
   hosts: localhost
   tasks:
     - docker_container:
-        name: example-play
-        image: python:alpine
+        name: hadoop-solr 
+        image: prashanthmacys/hadoop-solr
         command: ["sleep", "1d"]
 
 - name: Example play
