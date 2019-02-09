@@ -3,11 +3,11 @@
   hosts: localhost
   tasks:
     - docker_container:
-        name: hadoop-solr 
-        image: prashanthmacys/hadoop-solr
+        name: hadoop-solr
+        image: prashanthmacys/hadoop-solr:latest
         command: ["sleep", "1d"]
 
 - name: Example play
-  hosts: example-play
+  hosts: hadoop-solr
   roles:
     - name: "docker-role"
